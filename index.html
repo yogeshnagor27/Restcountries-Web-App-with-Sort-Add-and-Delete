@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <title>My Restcountries Web App</title>
+     <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+     <h1>Country Information</h1>
+     <div id="filter-bar">
+       <label for="sort-select">Sort by:</label>
+       <select id="sort-select">
+         <option value="name">Name</option>
+         <option value="population">Population</option>
+       </select>
+       <input type = "text" id = "cc" placeholder="countrycode">
+       <button type="Add" onclick = "addcountry()">Add country</button> 
+     </div>
+     <table>
+       <thead>
+         <tr>
+           <th>Flag</th>
+           <th>Title</th>
+           <th>Population</th>
+           <th>Google Maps</th>
+         </tr>
+       </thead>
+       <tbody id="country-list"></tbody>
+     </table>
+     <div id="restcountries-link">
+       <p>Data provided by <a href="https://restcountries.com" target="_blank">Restcountries</a></p>
+     </div>
+     <script src="index.js"></script>
+   </body>
+</html>
